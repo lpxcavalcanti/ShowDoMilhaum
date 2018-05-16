@@ -1,0 +1,32 @@
+﻿<Window x:Class="ShowDoMilhao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShowDoMilhao"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid Name="GridTelaAbertura" Visibility="Visible" Margin="10">
+            <Label Content="Nome do Jogador" HorizontalAlignment="Left" Height="25" Margin="88,119,0,0" VerticalAlignment="Top" Width="106"/>
+            <TextBox Name="TextBoxNomeJogador" HorizontalAlignment="Left" Height="22" Margin="88,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button Content="Jogar" HorizontalAlignment="Left" Margin="213,149,0,0" VerticalAlignment="Top" Width="77" Height="22" Click="Button_Click"/>
+        </Grid>
+        <Grid Name="GridTelaPergunta" Visibility="Hidden" Margin="10">
+            <Label Name="LabelNomeJogador" Content="..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <TextBlock Name="TextBlockEnunciado" Margin="10,41,10,137" TextWrapping="Wrap" Text="..."/>
+            <RadioButton Name="RadioButtonResposta1" Content="RadioButton" HorizontalAlignment="Left" Margin="0,167,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="RadioButtonResposta2" Content="RadioButton" HorizontalAlignment="Left" Margin="0,187,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="RadioButtonResposta3" Content="RadioButton" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="RadioButtonResposta4" Content="RadioButton" HorizontalAlignment="Left" Margin="0,227,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="RadioButtonResposta5" Content="RadioButton" HorizontalAlignment="Left" Margin="0,247,0,0" VerticalAlignment="Top"/>
+            <Button Content="Responder" HorizontalAlignment="Left" Margin="413,269,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click_1"/>
+            <Label Name="LabelPontuacao" Content="Pontuação: " HorizontalAlignment="Left" Margin="277,127,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Name="GridTelaFinal" Visibility="Hidden" Margin="10">
+            <Label Content="O Jogo Terminou!" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="106"/>
+            <TextBlock Name="TextBlockFinal" Text="..."  HorizontalAlignment="Left" Height="112" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        </Grid>
+
+    </Grid>
+</Window>
