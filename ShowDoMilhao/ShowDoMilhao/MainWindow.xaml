@@ -24,8 +24,8 @@
             <Label Name="LabelPontuacao" Content="Pontuação: " HorizontalAlignment="Left" Margin="277,127,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Grid Name="GridTelaFinal" Visibility="Hidden" Margin="10">
-            <Label Content="O Jogo Terminou!" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="106"/>
-            <TextBlock Name="TextBlockFinal" Text="..."  HorizontalAlignment="Left" Height="112" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+            <Label Content="O Jogo Terminou!" HorizontalAlignment="Left" Height="38" Margin="70,10,0,0" VerticalAlignment="Top" Width="172"/>
+            <TextBlock Name="TextBlockFinal" Text="..."  HorizontalAlignment="Left" Height="112" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
         </Grid>
 
     </Grid>

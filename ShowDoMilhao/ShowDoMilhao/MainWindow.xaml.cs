@@ -198,7 +198,7 @@ namespace ShowDoMilhao
 
             if(respostaSelecionada == respostaPergunta)
             {
-                Jogador.Pontuacao = Jogador.Pontuacao + 10;
+                Jogador.Pontuacao = Jogador.Pontuacao + 100;
             }
             else
             {
@@ -223,9 +223,9 @@ namespace ShowDoMilhao
             GridTelaFinal.Visibility = Visibility.Visible;
 
             TextBlockFinal.Text =
-                "O jogo acabou!\n A sua pontuação foi: " +
-                Jogador.Pontuacao +
-                " pontos!";
+                "Você acertou " + Jogador.Pontuacao / 100 + " de 10 questões \n" +
+                "A sua pontuação foi: " + Jogador.Pontuacao + " pontos!" ;
+
         }
     }
 
